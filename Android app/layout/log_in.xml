@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter the IP address of your Pi"
+        android:textSize="25dp"
+        android:id="@+id/infoTxt"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:gravity="center_vertical|center_horizontal"
+        android:inputType="none"
+        android:background="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/address1_increment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/digits_increment"
+                android:background="@color/black" />
+
+            <EditText
+                android:id="@+id/address1_input"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:gravity="center_vertical|center_horizontal"
+                android:singleLine="true"
+                android:inputType="number"
+                android:maxLength="3"
+                android:text="0"
+                android:editable="true"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/address1_decrement"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/digits_decrement"
+                android:background="@color/black" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/address_dot" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/address2_increment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/digits_increment"
+                android:background="@color/black" />
+
+            <EditText
+                android:id="@+id/address2_input"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:gravity="center_vertical|center_horizontal"
+                android:singleLine="true"
+                android:inputType="number"
+                android:maxLength="3"
+                android:text="0"
+                android:editable="true"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/address2_decrement"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/digits_decrement"
+                android:background="@color/black" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/address_dot" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/address3_increment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/digits_increment"
+                android:background="@color/black" />
+
+            <EditText
+                android:id="@+id/address3_input"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:gravity="center_vertical|center_horizontal"
+                android:singleLine="true"
+                android:inputType="number"
+                android:maxLength="3"
+                android:text="0"
+                android:editable="true"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/address3_decrement"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/digits_decrement"
+                android:background="@color/black" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/address_dot" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/address4_increment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/digits_increment"
+                android:background="@color/black" />
+
+            <EditText
+                android:id="@+id/address4_input"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:gravity="center_vertical|center_horizontal"
+                android:singleLine="true"
+                android:inputType="number"
+                android:maxLength="3"
+                android:text="0"
+                android:editable="true"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/address4_decrement"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/digits_decrement"
+                android:background="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        android:textSize="25dp"
+        android:id="@+id/goBtn"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:background="@color/black" />
+</LinearLayout>

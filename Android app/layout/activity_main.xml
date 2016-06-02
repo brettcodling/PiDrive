@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp" tools:context=".MainActivity"
+    android:id="@+id/video"
+    android:background="@color/white"
+    android:keepScreenOn="true" >
+
+    <com.camera.simplemjpeg.MjpegView
+        android:id="@+id/mv"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⇓"
+        android:textSize="80dp"
+        android:id="@+id/reverseBtn"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⇑"
+        android:textSize="80dp"
+        android:id="@+id/forwardBtn"
+        android:textColor="@color/white"
+        android:layout_above="@+id/reverseBtn"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⇓"
+        android:textSize="80dp"
+        android:id="@+id/leftBtn"
+        android:textColor="@color/white"
+        android:layout_marginLeft="40dp"
+        android:layout_alignParentBottom="true"
+        android:rotation="90" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⇑"
+        android:textSize="80dp"
+        android:id="@+id/rightBtn"
+        android:textColor="@color/white"
+        android:layout_marginLeft="160dp"
+        android:layout_alignParentBottom="true"
+        android:rotation="90" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="15sp"
+        android:id="@+id/response"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Connection"
+        android:textSize="15sp"
+        android:id="@+id/connectBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="end"
+        android:id="@+id/RGroup"
+        android:paddingRight="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cruise"
+            android:id="@+id/cruiseTxt"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cruiseCBox"
+            android:onClick="onCheckBoxSelect"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Speed:"
+            android:id="@+id/speedTxt"
+            android:layout_alignParentTop="false"
+            android:layout_toLeftOf="@+id/slowRBtn"
+            android:focusable="false"
+            android:layout_alignBaseline="@+id/slowRBtn"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Slow"
+            android:id="@+id/slowRBtn"
+            android:textSize="15sp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/mediumRBtn"
+            android:layout_toStartOf="@+id/mediumRBtn"
+            android:onClick="onRadioButtonClicked"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium"
+            android:id="@+id/mediumRBtn"
+            android:textSize="15sp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/fastRBtn"
+            android:layout_toStartOf="@+id/fastRBtn"
+            android:onClick="onRadioButtonClicked" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fast"
+            android:id="@+id/fastRBtn"
+            android:textSize="15sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="onRadioButtonClicked" />
+
+    </RadioGroup>
+
+</RelativeLayout>
